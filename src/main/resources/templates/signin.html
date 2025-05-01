@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/login/css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="form-structor">
+    <div class="login">
+        <div class="center">
+            <!-- Login Form -->
+            <form method="post" action="/akash/login">
+                <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+                <div class="form-holder">
+                    <!-- Email Input -->
+<!--                    <input id="login-email" type="email" name="name" class="input" placeholder="Email" required />-->
+                    <input id="login-email" type="text" name="username" class="input" placeholder="User Name" required />
+                    <div class="password-container">
+                        <!-- Password Input -->
+                        <input id="login-password" type="password" name="password" class="input" placeholder="Password" required />
+                        <i class="eye-icon" id="login-toggle-password" onclick="togglePassword('login')">👁️</i>
+                    </div>
+                </div>
+                <!-- Submit Button -->
+                <button class="submit-btn" type="submit">Log in</button>
+
+                <div class="signup-link" style="margin-top: 16px; text-align: center;">
+                    <span>New customer? </span><a href="/req/signup" style="color: #1a73e8; text-decoration: none;">Sign up here</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/login/js/login-script.js"></script>
+</body>
+</html>

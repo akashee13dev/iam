@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome to Akash Company</title>
+    <link rel="stylesheet" href="/login/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/" class="logo">Akash Company</a>
+        <div class="nav-links">
+            <a href="/profile">Profile</a>
+            <a href="/logout" th:href="@{/logout}">Logout</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Akash Company</h1>
+        <p>Your trusted partner for innovative solutions!</p>
+        <a href="/services" class="cta-btn">Explore Our Services</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Akash Company. All rights reserved.</p>
+</footer>
+
+<script src="/js/home.js"></script>
+</body>
+</html>

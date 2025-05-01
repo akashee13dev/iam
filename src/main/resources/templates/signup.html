@@ -1,0 +1,31 @@
+<!-- templates/signup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/login/css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="form-structor">
+    <div class="signup">
+        <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+        <div class="form-holder">
+            <input id="signup-name" type="text" class="input" placeholder="Name" />
+            <input id="signup-email" type="email" class="input" placeholder="Email" />
+            <div class="password-container">
+                <input id="signup-password" type="password" class="input" placeholder="Password" />
+                <i class="eye-icon" id="signup-toggle-password" onclick="togglePassword('signup')">👁️</i>
+            </div>
+        </div>
+        <button class="submit-btn" onclick="createUser()">Sign up</button>
+
+        <div class="signin-link" style="margin-top: 16px; text-align: center;">
+            <span>Already have an account ? </span><a href="/req/signin" style="color: #1a73e8; text-decoration: none;">Sign up here</a>
+        </div>
+
+    </div>
+</div>
+<script src="/login/js/script.js"></script>
+</body>
+</html>
